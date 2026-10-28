@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saját név</title>
+  <link rel="stylesheet" href="index.css">
+
+</head>
+
+<body>
+
+  <!-- Fejléc -->
+  <header>
+    <div class="character-sheet">
+      <h2>Kiválasztott Karakter</h2>
+      <div id="sheet-content">
+        <p class="placeholder-text">Kattints egy karakter "Kiválasztás" gombjára!</p>
+      </div>
+
+    </div>
+    <div class="header-text">
+      <h1>⚡ Cyberpunk 2099</h1>
+      <p>Válassz karaktert a játék kezdetéhez!</p>
+    </div>
+  </header>
+
+  <!-- Fő tartalom -->
+  <main>
+    <!-- Tulajdonságlap (Oldalsáv) -->
+
+    <!-- Karakterválasztó szekció -->
+    <section class="character-selection">
+      <h2>Választható Karakterek</h2>
+
+      <div class="cards-container">
+        <!-- 1. Karakter -->
+        <div class="character-card" id="card-aida">
+          <h3 class="char-name">Aida</h3>
+          <img class="char-img" src="kepek/aida_hacker.png" alt="Aida">
+          <p>Életerő: <span class="char-hp">100</span> HP</p>
+          <button id="aida-btn">Kiválasztás</button>
+        </div>
+
+        <!-- 2. Karakter -->
+        <div class="character-card" id="card-dante">
+          <h3 class="char-name">Dante</h3>
+          <img class="char-img" src="kepek/dante_netrunner.png" alt="Dante">
+          <p>Életerő: <span class="char-hp">120</span> HP</p>
+          <button id="dante-btn">Kiválasztás</button>
+        </div>
+
+        <!-- 3. Karakter -->
+        <div class="character-card" id="card-viktor">
+          <h3 class="char-name">Viktor</h3>
+          <img class="char-img" src="kepek/viktor_tech.png" alt="Viktor">
+          <p>Életerő: <span class="char-hp">80</span> HP</p>
+          <button id="viktor-btn">Kiválasztás</button>
+        </div>
+      </div>
+    </section>
+
+
+
+  </main>
+  <footer>
+    <p>Készítette: Saját név</p>
+  </footer>
+  <script src="index.js"></script>
+</body>
+
+</html>
