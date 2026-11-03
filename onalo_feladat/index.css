@@ -1,0 +1,133 @@
+/* Egészítsd ki a kódot az oldal elrendezésével. Flexboxot használj! 
+Változtasd meg a színeket!
+*/
+
+/* Színváltozók */
+:root {
+  --hatter: #121212;
+  --szoveg: #e0e0e0;
+  --kiemeles: #00ffcc;
+  --masodlagos-kiemeles: #ff0055;
+  --kartya-hatter: #1e1e1e;
+  --szegely: #333;
+  --arnyek: rgba(0, 0, 0, 0.5);
+  --feher: #fff;
+  --tulajdonsaglap-hatter: #1a2625;
+  --halvany-szoveg: #888;
+}
+
+/* Alapbeállítások és sötét téma */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--hatter);
+  color: var(--szoveg);
+  margin: 0;
+  padding: 20px;
+}
+
+/* Fejléc stílusa */
+header {
+  /*  */
+  /*  */
+  /*  */
+}
+
+.header-text {
+  /*  */
+  text-align: center;
+  margin-bottom: 30px;
+  border-bottom: 2px solid var(--kiemeles);
+  padding-bottom: 10px;
+}
+
+header h1 {
+  color: var(--kiemeles);
+  margin: 0;
+}
+
+/* Fő elrendezés Flexbox-szal */
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.cards-container {
+  /*  */
+  /*  */
+  /*  */
+  /*  */
+}
+
+/* Karakterkártyák stílusa */
+.character-card {
+  background-color: var(--kartya-hatter);
+  border: 1px solid var(--szegely);
+  border-radius: 8px;
+  padding: 15px;
+  width: 200px;
+  text-align: center;
+  box-shadow: 0 4px 10px var(--arnyek);
+}
+
+.character-card h3 {
+  color: var(--masodlagos-kiemeles);
+  margin-top: 0;
+}
+
+/* Képek méretezése */
+.char-img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 4px;
+  border: 1px solid var(--kiemeles);
+}
+
+/* Kiválasztás gomb */
+.select-btn {
+  background-color: var(--kiemeles);
+  color: var(--hatter);
+  font-weight: bold;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.select-btn:hover {
+  background-color: var(--masodlagos-kiemeles);
+  color: var(--feher);
+}
+
+/* Tulajdonságlap */
+.character-sheet {
+  /*  */
+  background-color: var(--tulajdonsaglap-hatter);
+  border: 2px solid var(--kiemeles);
+  border-radius: 8px;
+  padding: 20px;
+  height: fit-content;
+}
+
+.character-sheet h2 {
+  font-size: 14px;
+  color: var(--kiemeles);
+  margin-top: 0;
+}
+
+.placeholder-text {
+  font-size: 10px;
+  font-style: italic;
+  color: var(--halvany-szoveg);
+}
+
+.character-sheet .char-name,
+.character-sheet p {
+  font-size: 10px;
+}
+
+.character-sheet .character-card {
+  padding: 5px;
+}
